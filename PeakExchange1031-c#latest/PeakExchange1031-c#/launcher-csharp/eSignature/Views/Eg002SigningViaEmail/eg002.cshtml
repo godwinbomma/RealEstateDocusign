@@ -1,0 +1,30 @@
+﻿
+<form class="eg" action="" method="post" data-busy="form">
+    <div style="display:none" class="form-group">
+       
+        <input type="hidden" class="form-control" id="signerEmail" name="signerEmail" value=@ViewBag.Eg002Model.SignerEmail
+               aria-describedby="emailHelp" placeholder="pat@example.com" required
+               >
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div style="display:none" class="form-group">
+        <input type="text" class="form-control" id="signerName" placeholder="Pat Johnson" name="signerName" value=@ViewBag.Eg002Model.SignerNamew
+                required>
+    </div>
+    @*<div style="display:none" class="form-group">
+        <label for="ccEmail">CC Email</label>
+        <input type="email" class="form-control" id="ccEmail" name="ccEmail" 
+               aria-describedby="emailHelp" placeholder="pat@example.com" value=@ViewBag.Eg002Model.SignerCC required 
+        <small id="emailHelp" class="form-text text-muted">The email and/or name for the cc recipient must be different from the signer.</small>
+    </div>
+    <div style="display:none" class="form-group">
+        <label for="ccName">CC Name</label>
+        <input type="text" class="form-control" id="ccName" placeholder="Pat Johnson" name="ccName"  value=@ViewBag.Eg002Model.SignerCCname
+               required>
+    </div>*@
+    <input type="hidden" name="_csrf" value="<%- csrfToken %>">
+    <button style="display:none" type="submit" id="eg002" class="btn btn-primary">Submit</button>
+</form>
+<script>
+    document.getElementById("eg002").click();
+</script>

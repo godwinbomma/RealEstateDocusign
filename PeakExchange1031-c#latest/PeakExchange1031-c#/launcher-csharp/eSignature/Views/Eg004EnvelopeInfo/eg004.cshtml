@@ -1,0 +1,25 @@
+﻿
+@if (ViewBag.showDoc)
+{
+}
+
+
+
+
+
+@if (ViewBag.envelopeOk)
+{
+
+                <form class="eg" action="" method="post" data-busy="form">
+                    <input type="hidden" name="_csrf" value="@ViewBag.csrfToken">
+                    <button id="eg004" type="submit" class="btn btn-primary">Continue</button>
+                </form>
+                
+}
+<script>
+    document.getElementById("eg004").click();
+</script>
+
+
+
+                           

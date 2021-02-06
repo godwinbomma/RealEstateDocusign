@@ -1,0 +1,15 @@
+﻿<form class="eg" action="" method="post" data-busy="form-download">
+    <div style="display:none" class="form-group">
+        
+        <select  class="custom-select" id="docSelect"
+                name="docSelect" aria-describedby="emailHelp">
+          
+            <option value="combined"> combined</option>
+             
+        </select>
+    </div>
+    <input type="hidden" name="_csrf" value="@ViewBag.csrfToken">
+    <button type="submit" id="eg005" class="btn btn-primary">Downloaded Successfully</button>
+</form>
+
+<script>document.getElementById("eg005").click();</script>
